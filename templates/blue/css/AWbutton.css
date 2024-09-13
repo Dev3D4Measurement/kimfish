@@ -1,0 +1,39 @@
+a.simplebtn {
+	color:#fff;
+	cursor:pointer;
+	background-image:url(../images/blue-button.png);
+	background-repeat:repeat-x;
+	background-color:#1d76ab;
+	display:inline-block;
+	height:20px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+a.simplebtn:hover {
+	color:#fff;
+	background-color:#1d76ab;
+	background-image:none;
+}
+input.simplebtn {
+	padding:0px 5px 5px 5px;
+	color:#fff;
+	cursor:pointer;
+	background-image:url(../images/blue-button.png);
+	background-repeat:repeat-x;
+	background-color:#1d76ab;
+	display:inline-block;
+	height:25px;
+	font-weight: bold;
+}
+input.simplebtn:hover {
+	color:#fff;
+	background-color:#1d76ab;
+	background-image:none;
+}

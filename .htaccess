@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule ^index\.php$ media.php?module=store [L]
+RewriteRule ^profil\.html$ media.php?module=profil&id=$1 [L]
+RewriteRule ^cara-pemesanan\.html$ media.php?module=pemesanan&id=$1 [L]
+RewriteRule ^login\.html$ media.php?module=login&id=$1 [L]
+RewriteRule ^registrasi\.html$ media.php?module=registrasi&id=$1 [L]
+
+RewriteRule ^produk-(.*)\.html$ media.php?module=detailproduk&id=$1 [L]
+RewriteRule ^produk\.html$ media.php?module=produk&nama_produk=$1 [L]
+RewriteRule ^produk1\.html$ media.php?module=produk1&id=$1 [L]
+RewriteRule ^halproduk-(.*)\.html$ media.php?module=produk&halproduk=$1 [L]
+
+RewriteRule ^page-(.*)\.html$ media.php?module=halamanstatis&id=$1 [L]
+RewriteRule ^keranjang-(.*)\.html$ media.php?module=keranjangbelanja&id=$1 [L]
+RewriteRule ^selesai-(.*)\.html$ media.php?module=selesaibelanja&id=$1 [L]
+RewriteRule ^simpan-transaksi\.html$ media.php?module=simpantransaksi&id=$1 [L]
+
+RewriteRule ^berita\.html$ media.php?module=berita&id=$1 [L]
+RewriteRule ^halberita-(.*)\.html$ media.php?module=berita&halberita=$1 [L]
+RewriteRule ^berita-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+
+RewriteRule ^konfirmasi\.html$ media.php?module=konfirmasi&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungi&id=$1 [L]
+
+RewriteRule ^kategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+
+RewriteRule ^testimonial\.html$ media.php?module=testimonial [L]
+RewriteRule ^haltestimonial-(.*)\.html$ media.php?module=testimonial&haltestimonial=$1 [L]
+
+RewriteRule ^promo-([0-9]+)-(.*)\.html$ media.php?module=promo&id=$1 [L]
+
+RewriteRule ^hasil-pencarian\.html$ media.php?module=hasilpencarian&id=$1 [L]
+
+RewriteRule ^hasil-poling\.html$ media.php?module=hasilpoling&id=$1 [L]
+RewriteRule ^poling\.html$ media.php?module=lihatpoling&id=$1 [L]
+
+RewriteRule ^cek-order\.html$ media.php?module=cekorder&id=$1 [L]
+
+Options All -Indexes
+
+</IfModule>
+

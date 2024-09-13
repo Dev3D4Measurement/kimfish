@@ -1,0 +1,343 @@
+#thankYou{
+	display: none;
+	left: 50%;
+	margin: -30px 0 0 -200px;
+	position: fixed;
+	top: 50%;
+	width: 400px;
+	z-index: 10000;
+}
+
+#thankYou h1{
+	margin-bottom:20px;
+}
+
+#formContainer{
+	width: 425px;
+	margin-left: 25px;
+}
+
+
+.embed #formContainer{
+	margin-top:20px;
+	margin-bottom:0;
+}
+
+.formRow{
+	padding-top: 4px;
+	padding-right: 0;
+	padding-bottom: 1px;
+	padding-left: 0;
+}
+
+.formRow label{
+	display: inline-block;
+	margin-left: -72px;
+	padding-right: 8px;
+	text-align: right;
+	width: 180px;
+	text-transform: capitalize;
+}
+
+.formRow label.radioLabel{
+	width:auto;
+	margin:0 5px 0 0;
+}
+
+.formRow input,
+.formRow textarea{
+	background-color:#fff;
+	border:none;
+	color:#777;
+	outline:none;
+	resize:none;
+	font:14px/1.2 Calibri,Arial,sans-serif;
+	width: 200px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 1px 1px 1px #bbb inset, 0 0 1px #ccc inset;
+	-webkit-box-shadow: 1px 1px 1px #bbb inset, 0 0 1px #ccc inset;
+	box-shadow: 1px 1px 1px #bbb inset, 0 0 1px #ccc inset;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+}
+
+.formRow input:focus,
+.formRow textarea:focus{
+	-moz-box-shadow: 1px 1px 1px #aecae9 inset, 0 0 1px #aecae9 inset;
+	-webkit-box-shadow: 1px 1px 1px #aecae9 inset, 0 0 1px #aecae9 inset;
+	box-shadow: 1px 1px 1px #aecae9 inset, 0 0 1px #aecae9 inset;
+}
+
+.formRow textarea{
+	vertical-align: top;
+	width: 250px;
+	overflow:auto;
+}
+
+.formRow input[type=submit],
+.formRow input[type=button]{
+	width:120px;
+	margin-left: 120px;
+	cursor:pointer;
+}
+
+.star{
+	color:#e20000;
+}
+
+.staticError{
+	color: #E20000;
+	font-size: 11px;
+	padding: 4px 0 0 120px;
+}
+
+.errorIcon{
+	width:18px;
+	height:19px;
+	display:inline-block;
+	position:relative;
+	margin-left: 6px;
+	vertical-align: middle;
+	cursor:pointer;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: -100px -150px;
+}
+
+.errorIcon .errorTip{
+	border:1px solid #a00c0d;
+	border-top-color:#d01113;
+	color:#fff;
+	text-shadow:1px 1px 0 #9a1b1d;
+	padding:10px;
+	position:absolute;
+	z-index:1000;
+	font-size:11px;
+	width:160px;
+	text-align:center;
+	top:-10px;
+	line-height:1.2;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	-moz-box-shadow:0 1px 0 #aaa;
+	-webkit-box-shadow:0 1px 0 #aaa;
+	box-shadow:0 1px 0 #aaa;
+	background-color: #c82f32;
+	background-image: url(../images/tooltip_bg.png);
+	background-repeat: repeat-x;
+}
+
+#overlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#000;
+	opacity:0.4;
+	filter:alpha(opacity=0.4);
+	z-index:100000;
+}
+
+#preloader{
+	font-size: 11px;
+	height: 20px;
+	left: 50%;
+	line-height: 20px;
+	margin: -20px 0 0 -45px;
+	padding: 10px;
+	position: fixed;
+	text-align: left;
+	text-indent: 36px;
+	top: 50%;
+	width: 90px;
+	z-index: 100001;
+	color:#eee;
+	opacity:0.8;
+	filter:alpha(opacity=0.8);
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	background-color: #000000;
+	background-image: url(../images/preloader.gif);
+	background-repeat: no-repeat;
+	background-position: 12px 10px;
+}
+
+/***************************
+*		Select Boxes
+***************************/
+
+.selectContainer{
+	padding: 0 15px 0 10px;
+	min-width: 186px;
+	display: inline-block;
+	position: relative;
+	cursor:pointer;
+	margin-right: 5px;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+}
+
+.selectBox{
+	height: 30px;
+	line-height: 30px;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.selectContainer:hover{
+	background-position:0 -30px;
+}
+
+.selectContainer:hover span{
+	background-position:100% -30px;
+}
+
+.selectContainer span{
+	height:30px;
+	right: -5px;
+	top:0;
+	position:absolute;
+	width:25px;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.selectContainer ul{
+	left: 1px;
+	list-style: none outside none;
+	position: absolute;
+	right: -5px;
+	top: 32px;
+	z-index:10000;
+	border:1px solid #ccc;
+	border-width:0 1px 1px;
+}
+
+.selectContainer li{
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	padding: 0 10px;
+	text-shadow: 1px 1px 0 #fff;
+	background-image: url(../images/sprite.png);
+	background-repeat: repeat;
+	background-position: -4px 0;
+}
+
+.selectContainer li:hover{
+	background-image: url(../images/sprite.png);
+	background-repeat: repeat;
+	background-position: -4px -30px;
+}
+
+
+/***************************
+*		Checkboxes
+***************************/
+
+
+.formRow .checkBox{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	line-height: 16px;
+	vertical-align: middle;
+	cursor:pointer;
+	background-image: url(../images/sprite.png);
+	background-repeat: repeat;
+	background-position: 0 -150px;
+}
+
+.formRow .checkBox:hover{
+	background-position:0 -170px;
+}
+
+.formRow .checkBox.checked{
+	background-position:-20px -150px;
+}
+
+.formRow .checkBox.checked:hover{
+	background-position:-20px -170px;
+}
+
+/***************************
+*		Radios
+***************************/
+
+.formRow .radio{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	line-height: 16px;
+	vertical-align: middle;
+	cursor:pointer;
+	background-image: url(../images/sprite.png);
+	background-repeat: repeat;
+	background-position: -40px -150px;
+}
+
+.formRow .radio:hover{
+	background-position:-40px -170px;
+}
+
+.formRow .radio.checked{
+	background-position:-60px -150px;
+}
+
+.formRow .radio.checked:hover{
+	background-position:-60px -170px;
+}
+
+
+/***************************
+*		Submit button
+***************************/
+
+
+.formRow .button{
+	border: none;
+	position:relative;
+	cursor: pointer;
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 10px 0 15px;
+	margin: 10px 0 0 120px;
+	position: relative;
+	color:#65717d;
+	text-shadow: 1px 1px 0 #fff;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 -70px;
+}
+
+.formRow .button span{
+	height:34px;
+	right: -10px;
+	top:0;
+	position:absolute;
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: 100% -70px;
+}
+
+.formRow .button:hover{
+	background-position:0 -104px;
+}
+
+.formRow .button:hover span{
+	background-position:100% -104px;
+}
+
+.formRow .button:active{
+	bottom:-1px;
+}
+
+#result { background-color: #F0FFED; border: 1px solid #215800; padding: 10px; width: 400px; margin-bottom: 20px; }

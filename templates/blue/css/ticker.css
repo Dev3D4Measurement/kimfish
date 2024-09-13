@@ -1,0 +1,129 @@
+.ticker2 {
+	width: 240px;
+	overflow: hidden;
+	list-style: none;
+	padding-left: 4px;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 15px;
+	margin-left: 0;
+}
+#ticker_02 {
+}
+.ticker2 li {
+	border-bottom: 1px dotted #DDD;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+}
+.testi{
+	color:#1d76ab;
+	font-size: 16px;
+	font-family: Qlassik_TB;
+	width: 230px;
+	padding-bottom: 10px;
+}
+.testi3{
+	width:230px;
+	color:#616161;
+	font-size: 12px;
+	line-height: 18px;
+}
+.testi5{
+	width:180px;
+	font-size: 11px;
+	color: #333333;
+	margin-bottom: 5px;
+}
+
+.ticker1 {
+	width: 270px;
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+#ticker_01 {
+	height: 220px;
+}
+.ticker1 li {
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.ticker3 {
+	width: 245px;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+#ticker_03 {
+	height: 320px;
+}
+.ticker3 li {
+	padding: 5px;
+	margin: 0px 5px;
+}
+.ticker4 {
+	margin-left: -10px;
+	margin-top: -5px;
+}
+#ticker_04 {
+	height: 140px;
+}
+.ticker4 li {
+	padding: 5px;
+	margin: 0px 5px;
+}
+
+
+#newsticker-demo {
+	width:245px;
+	background:#EAF4F5;
+	font-family:Verdana, Arial, Sans-Serif;
+	font-size:12px;
+	padding-top: 10px;
+	padding-right: 5px;
+}
+
+#newsticker-demo a { text-decoration:none; }
+#newsticker-demo img { border: 2px solid #FFFFFF; }
+
+.newsticker-jcarousellite {
+	width:245px;
+}
+.newsticker-jcarousellite ul li{
+	list-style:none;
+	display:block;
+	padding-bottom:1px;
+	margin-bottom:5px;
+	height: 85px;
+}
+.newsticker-jcarousellite .thumbnail {
+	float:left;
+	width:70px;
+	margin-left: -10px;
+}
+.newsticker-jcarousellite .info {
+	float:right;
+	width:155px;
+	margin-right: 5px;
+}
+.newsticker-jcarousellite .info span.cat { display: block; font-size:10px; color:#808080; }
+.newsticker-jcarousellite .info span.cat1 { display: block; font-size:11px; color:#333; }
+
+.clear { clear: both; }
